@@ -1,0 +1,50 @@
+.body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: grey;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-right: 1px solid black;
+}
+
+#navbar > ul {
+  height: 80%;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.navlink {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+hr {
+  margin: 40px auto;
+  width: 70%;
+  border: dotted #aecece 6px;
+  border-bottom: none;
+}
+
+@media (max-width: 960px) {
+
+}
