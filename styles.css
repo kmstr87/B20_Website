@@ -1,0 +1,26 @@
+html, body {
+ height: 100%;
+ margin: 0px;
+}
+.weeklyPicks {
+}
+.weeklyPicks-title {
+ padding-left: 20px;
+ margin-bottom: -20px;
+}
+.weeklyPicks-inside4 {
+ padding-left: 20px;
+ padding-bottom: 500px;
+}
+.footer {
+ height: 20px;
+ margin-top: 15%;
+ position: sticky;
+ bottom: 120px;
+}
+.footer-inside{
+ padding-top: 2.5px;
+ padding-bottom: 7px;
+ padding-left: 30px;
+ background-color: #91D8E4;
+}
