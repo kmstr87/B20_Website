@@ -3,34 +3,39 @@ html, body {
  margin: 0px;
 }
 
-.weeklyPicks {
+.Page-title {
+ padding-left: 10%;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ background-color: #82AAE3; 
 }
 
 .weeklyPicks-title {
  margin-top: 10%;
- margin-left:38%;
- margin-right: 38%;
- margin-bottom: -20px;
- padding-left: 6%;
+ margin-left:30%;
+ margin-right: 30%;
+ margin-bottom: -25px;
+ padding-top: 1%;
+ padding-left: 10%;
  padding-right: 6%;
  background-color: #82AAE3;
- font-size: 15px;
+ font-size: 20px;
 }
 
 .weeklyPicks-inside4 {
  margin-top: 1%;
- margin-left: 38%;
- margin-right: 38%;
+ margin-left: 30%;
+ margin-right: 30%;
  margin-bottom: 50%;
- padding-left: 1.5%;
- padding-right: 1%;
- padding-bottom: 1%;
+ padding-left: 5%;
+ padding-right: 5%;
+ padding-bottom: 4%;
  background-color: #82AAE3;
 }
 
 .footer {
  height: 22px;
- padding-left: 30px;
+ padding-left: 50px;
  position: sticky;
  bottom: 0;
  background-color: #82AAE3;
