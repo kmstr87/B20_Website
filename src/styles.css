@@ -1,11 +1,14 @@
-html {
-  font-family: 'Montserrat', sans-serif;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
 }
 
 body {
   position: absolute;
-  margin: 12px 0 12px 212px; 
+  margin: 12px 0 12px 212px;
 }
 
 hr {
@@ -72,13 +75,60 @@ hr {
   margin: 16px;
 }
 
+.Page-title {
+  padding-left: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #82aae3;
+}
+
+.Page-title input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 20px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.weeklyPicks-title {
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 25%;
+  margin-bottom: -25px;
+  padding-top: 1%;
+  padding-left: 15%;
+  padding-right: 6%;
+  background-color: #82aae3;
+  font-size: 20px;
+}
+
+.weeklyPicks-inside4 {
+  margin-top: 1%;
+  margin-left: 30%;
+  margin-right: 25%;
+  margin-bottom: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 4%;
+  background-color: #82aae3;
+}
+
+.footer {
+  height: 22px;
+  padding-left: 50px;
+  position: sticky;
+  bottom: 0;
+  background-color: #82aae3;
+}
+
 @media (max-width: 415px) {
   hr {
     display: none;
   }
 
-  .books {
-    margin: 114px auto;
+  li {
+    font-size: 14px;
   }
 
   #navbar {
@@ -91,8 +141,15 @@ hr {
     padding: 0;
   }
 
-  li {
-    font-size: 14px;
+  .books {
+    margin: 114px auto;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 00;
+    text-align: center;
+    margin: 1rem auto;
   }
 
   #navbar > ul {
@@ -101,12 +158,5 @@ hr {
     align-items: flex-start;
     flex-wrap: wrap;
     height: 50px;
-  }
-
-  .title {
-    font-size: 22px;
-    font-weight: 00;
-    text-align: center;
-    margin: 1rem auto;
   }
 }
