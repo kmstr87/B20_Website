@@ -18,16 +18,14 @@ const checkAdmin = () => {
   Object.keys(admins).forEach((curItem) => {
     if (curItem === givenUsername) {
       if (admins[curItem] === givenPassword) {
-        console.log("test2");
-        document.querySelector(".login-fail").style.display = "none";
         document.querySelector(".login-success").style.display = "block";
         countCheck = 1;
       }
     }
   });
   if (countCheck != 1) {
-    document.querySelector(".login-fail").style.display = "block";
     document.querySelector(".login-success").style.display = "none";
+    alert("Login failed, you are not an admin!");
   }
   countCheck = 0;
 };
