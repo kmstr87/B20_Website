@@ -7,8 +7,9 @@ const admins = {
 let countCheck = 0;
 
 const formSubmit = document.querySelector("#formSubmit");
+const reviewSubmit = document.querySelector("#reviewSubmit");
 
-const checkAdmin = (event) => {
+const checkAdmin = () => {
   const givenUsername = document.querySelector("#username").value;
   const givenPassword = document.querySelector("#password").value;
   console.log(givenUsername);
@@ -31,4 +32,30 @@ const checkAdmin = (event) => {
   countCheck = 0;
 };
 
-formSubmit.addEventListener("click", checkAdmin);
+const reviewSubmitted = () => {
+  const givenUser = document.querySelector("#user").value;
+  const givenReview = document.querySelector("#review").value;
+
+  const curDiv = document.createElement("div");
+  const curUser = document.createElement("h3");
+  const curReview = document.createElement("p");
+
+  curUser.innerHTML = givenUser;
+  curReview.innerHTML = givenReview;
+
+  curDiv.classList.add("reviews");
+  document.querySelector(".main").appendChild(curDiv);
+  
+  const allReviews = document.querySelectorAll(".reviews");
+  const rand = document.querySelector(".footer");
+  const lastReview = allReviews[allReviews.length - 1];
+  lastReview.appendChild(curUser);
+  lastReview.appendChild(curReview);  
+}
+
+if (formSubmit != null) {
+  formSubmit.addEventListener("click", checkAdmin);
+}
+if (reviewSubmit != null) {
+  reviewSubmit.addEventListener("click", reviewSubmitted);
+}

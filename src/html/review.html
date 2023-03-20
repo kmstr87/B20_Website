@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B20 Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,15 +12,66 @@
       rel="stylesheet"
     />
   </head>
-  <nav id="navbar">
-    <h3 class="title"><a class="navlink" href="./index.html">Okayreads.com</a></h3>
-    <hr />
-    <ul>
-      <li><a class="navlink" href="./login.html">Log In</a></li>
-      <li><a class="navlink" href="./review.html">Reviews</a></li>
-      <li><a class="navlink" href="./summary.html">Summary</a></li>
-      <li><a class="navlink login-success" href="./admin.html">Admin</a></li>
-    </ul>
-  </nav>
-  <body></body>
+  <body>
+    <div class="Page-title">
+      <a href="./index.html">
+        <img
+          src="../../images/Okayreads_title.png"
+          alt="Okayreads Home Page"
+          width="200"
+          height="70"
+          style="vertical-align: bottom"
+        />
+      </a>
+      <a href=""> Books </a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href=""> Customer Support </a>
+      <input type="text" placeholder="Search.." />
+    </div>
+
+    <nav id="navbar">
+      <ul>
+        <li><a class="navlink" href="./login.html">Log In</a></li>
+        <li><a class="navlink" href="./review.html">Reviews</a></li>
+        <li><a class="navlink" href="./summary.html">Summary</a></li>
+        <li><a class="navlink login-success" href="./admin.html">Admin</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <label>User</label>
+      <input type="text" id="user" placeholder="Enter" required />
+      <label>Review</label>
+      <input type="text" id="review" placeholder="Enter" required />
+      <input type="submit" value="Submit" id="reviewSubmit" />
+    </div>
+
+    <div class="main">
+      <div class="reviews">
+        <h3>Leon Lee</h3>
+        <p>What If?: 1/10</p>
+      </div>
+      <div class="reviews">
+        <h3>Leon Lee</h3>
+        <p>Spare: 1/10</p>
+      </div>
+      <div class="reviews">
+        <h3>In Kim</h3>
+        <p>Spare: 1/10</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-title">
+        <strong>Collaborators</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Leon Lee
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        In Kim
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Michelle Guo
+      </div>
+    </div>
+    <script src="../../app.js" charset="utf-8"></script>
+  </body>
 </html>
