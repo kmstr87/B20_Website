@@ -44,8 +44,9 @@ const reviewSubmitted = () => {
   curReview.innerHTML = givenReview;
 
   curDiv.classList.add("reviews");
-  document.querySelector(".main").appendChild(curDiv);
 
+  document.querySelector(".review").appendChild(curDiv);
+  
   const allReviews = document.querySelectorAll(".reviews");
   const lastReview = allReviews[allReviews.length - 1];
   lastReview.appendChild(curUser);
