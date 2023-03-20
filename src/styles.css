@@ -98,3 +98,11 @@ html, body {
   cursor: pointer;
   color: #333;
 }
+
+.login-success {
+  display: none;
+}
+
+.login-fail {
+  display: none;
+}

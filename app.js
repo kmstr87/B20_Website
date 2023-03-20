@@ -4,25 +4,31 @@ const admins = {
   "Michelle Guo": "789",
 };
 
+let countCheck = 0;
+
 const formSubmit = document.querySelector("#formSubmit");
 
 const checkAdmin = (event) => {
-  event.preventDefault();
+  const givenUsername = document.querySelector("#username").value;
+  const givenPassword = document.querySelector("#password").value;
+  console.log(givenUsername);
+  console.log(givenPassword);
 
-  const givenUsername = document.querySelector("#username");
-  const givenPassword = document.querySelector("#password");
-
-  Object.keys().forEach((curItem) => {
+  Object.keys(admins).forEach((curItem) => {
     if (curItem === givenUsername) {
       if (admins[curItem] === givenPassword) {
-        document.querySelector(".login-failed").style.display = "none";
-        document.querySelector(".login-failed").style.display = "block";
-        return;
+        console.log("test2");
+        document.querySelector(".login-fail").style.display = "none";
+        document.querySelector(".login-success").style.display = "block";
+        countCheck = 1;
       }
     }
   });
-  document.querySelector(".login-failed").style.display = "block";
-  document.querySelector(".login-failed").style.display = "none";
+  if (countCheck != 1) {
+    document.querySelector(".login-fail").style.display = "block";
+    document.querySelector(".login-success").style.display = "none";
+  }
+  countCheck = 0;
 };
 
 formSubmit.addEventListener("click", checkAdmin);
