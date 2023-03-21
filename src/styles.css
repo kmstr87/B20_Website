@@ -179,12 +179,17 @@ section {
   font-size: 25pt;
 }
 
+#bookName {
+  height: 40px;
+  font-size: 20pt;
+}
+
 #password {
   height: 40px;
   font-size: 25pt;
 }
 
-.changeButton, .loginButton {
+.changeButton, .loginButton, .changeSubmit {
   display: block;
   width: 100%;
   border: none;
@@ -230,9 +235,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .reviewBox label, 
@@ -244,5 +246,15 @@ section {
 #fancyText{
   height:40px;
   font-size:15pt;
+  font: bold;
   align-items: left;
+}
+
+#fancyBookText{
+  height:40px;
+  font-size:15pt;
+  font: bold;
+  align-items: center;
+  align-items: left;
+  font-weight: bold;
 }
